@@ -45,4 +45,7 @@ class Stage
     Stage.all.select { |stage| stage.name.match?(/(#{query})/i)}
   end
 
+  def self.sorted()
+    Stage.all.sort_by { |stage| stage.name }
+  end
 end

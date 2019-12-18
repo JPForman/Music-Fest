@@ -1,0 +1,27 @@
+<div class="container">
+
+  <div class="jumbotron">
+    <h1>MusicFest<h1>
+  </div>
+
+  <% if @stages.any? %>
+    <ul>
+      <% @stages.each do |stage| %>
+        <li><a href="/stage/<%= stage.id %>" <% stage.nam %></a></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>There are no stages, which is sad cus where the kids gonna play?</p>
+  <% end %>
+
+<a href="stages/new">Add a stage, yo<
+
+
+
+
+
+
+
+
+
+</div>
