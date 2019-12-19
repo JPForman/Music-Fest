@@ -15,11 +15,15 @@ get('/stages') do
 end
 
 post('/stages') do
-  name = params[:name]
-  genre = params[:genre]
+  name = params[:stage_name]
+  genre = params[:stage_genre]
 
   stage = Stage.new(name, genre, nil)
-  stage.save
+  stage.save()
   @stages = Stage.sorted
   erb(:stages)
+end
+
+get('/stages/new') do
+  erb(:new_stage)
 end

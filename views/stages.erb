@@ -7,14 +7,14 @@
   <% if @stages.any? %>
     <ul>
       <% @stages.each do |stage| %>
-        <li><a href="/stage/<%= stage.id %>" <% stage.nam %></a></li>
+        <li><a href="/stages/<%= stage.id %>"> <%= stage.name %></a></li>
       <% end %>
     </ul>
   <% else %>
     <p>There are no stages, which is sad cus where the kids gonna play?</p>
   <% end %>
 
-<a href="stages/new">Add a stage, yo<
+<a href="stages/new">Add a stage, yo</a>
 
 
 
